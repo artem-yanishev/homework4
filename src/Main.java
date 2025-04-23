@@ -36,7 +36,35 @@ public class Main {
             System.out.println("Если возраст человека равен " +age1+", то ему пора ходить на работу.");
         }
         System.out.println("Задание 5.");
-
+        byte childAge = 17;
+        if (childAge < 5) {
+            System.out.println("Если возраст ребенка равен " +childAge+ ", то ему нельзя кататься на аттракционе.");
+        }
+        if (childAge >= 5 && childAge < 14) {
+            System.out.println("Если возраст ребенка равен " +childAge+ ", то ему можно кататься на аттракционе в сопровождении взрослого.");
+        }
+        if (childAge > 14) {
+            System.out.println("Если возраст ребенка равен " +childAge+ ", то ему можно кататься на аттракционе без сопровождения взрослого.");
+        }
+        System.out.println("Задание 6.");
+        short totalSeats = 50;
+        short seating = 60;
+        short standing = 42;
+        if (totalSeats < 102) {
+            System.out.println("Места есть.");
+        } else {
+            System.out.println("Мест нет.");
+        }
+        if (seating < 60) {
+            System.out.println("Сидячих мест " +seating+ ".");
+        } else {
+            System.out.println("Сидячих мест нет.");
+        }
+        if (standing < 42) {
+            System.out.println("Стоячих мест " +seating+ ".");
+        } else {
+            System.out.println("Стоячих мест нет.");
+        }
         byte age2 = 19;
         boolean canNotGoToSchool = age2 < 7 || age2 > 18;
         if (age2 >= 18 && age2 < 21) {
