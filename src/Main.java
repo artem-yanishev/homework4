@@ -47,21 +47,21 @@ public class Main {
             System.out.println("Если возраст ребенка равен " +childAge+ ", то ему можно кататься на аттракционе без сопровождения взрослого.");
         }
         System.out.println("Задание 6.");
-        short totalSeats = 50;
-        short seating = 60;
-        short standing = 42;
-        if (totalSeats < 102) {
+        short occupiedSeating = 60;
+        short occupiedStanding = 42;
+        if ((occupiedSeating + occupiedStanding ) < 102) {
             System.out.println("Места есть.");
         } else {
             System.out.println("Мест нет.");
+            return;
         }
-        if (seating < 60) {
-            System.out.println("Сидячих мест " +seating+ ".");
+        if (occupiedSeating < 60) {
+            System.out.println("Сидячих мест " +occupiedSeating+ ".");
         } else {
             System.out.println("Сидячих мест нет.");
         }
-        if (standing < 42) {
-            System.out.println("Стоячих мест " +seating+ ".");
+        if (occupiedStanding < 42) {
+            System.out.println("Стоячих мест " +occupiedSeating+ ".");
         } else {
             System.out.println("Стоячих мест нет.");
         }
