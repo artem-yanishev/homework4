@@ -65,6 +65,20 @@ public class Main {
         } else {
             System.out.println("Стоячих мест нет.");
         }
+        System.out.println("Задание 7.");
+        int one = 1;
+        int two = 2;
+        int three = 3;
+        if (two > one) {
+            System.out.println("Два больше одного.");
+        } else {
+            System.out.println("Один меньше двух.");
+        }
+        if (three > two) {
+            System.out.println("Три больше двух.");
+        } else {
+            System.out.println("Два меньше трёх.");
+        }
         byte age2 = 19;
         boolean canNotGoToSchool = age2 < 7 || age2 > 18;
         if (age2 >= 18 && age2 < 21) {
