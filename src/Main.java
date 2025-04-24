@@ -48,48 +48,34 @@ public class Main {
         }
         System.out.println("Задание 6.");
         short occupiedSeating = 60;
-        short occupiedStanding = 42;
-        if ((occupiedSeating + occupiedStanding ) < 102) {
+        short occupiedStanding = 41;
+        if ((occupiedSeating + occupiedStanding) < 102) {
             System.out.println("Места есть.");
+            if (occupiedSeating < 60) {
+                System.out.println("Сидячих мест " + (60 - occupiedSeating) + ".");
+            } else {
+                System.out.println("Сидячих мест нет.");
+            }
+            if (occupiedStanding < 42) {
+                System.out.println("Стоячих мест " + (42 - occupiedStanding) + ".");
+            } else {
+                System.out.println("Стоячих мест нет.");
+            }
         } else {
             System.out.println("Мест нет.");
-            return;
-        }
-        if (occupiedSeating < 60) {
-            System.out.println("Сидячих мест " +occupiedSeating+ ".");
-        } else {
-            System.out.println("Сидячих мест нет.");
-        }
-        if (occupiedStanding < 42) {
-            System.out.println("Стоячих мест " +occupiedSeating+ ".");
-        } else {
-            System.out.println("Стоячих мест нет.");
         }
         System.out.println("Задание 7.");
-        int one = 1;
-        int two = 2;
-        int three = 3;
-        if (two > one) {
-            System.out.println("Два больше одного.");
+        int one = 10;
+        int two = 25;
+        int three = 15;
+        if (one >= two && one >= three) {
+            System.out.println("Наибольшее число: " + one);
         } else {
-            System.out.println("Один меньше двух.");
-        }
-        if (three > two) {
-            System.out.println("Три больше двух.");
-        } else {
-            System.out.println("Два меньше трёх.");
-        }
-        byte age2 = 19;
-        boolean canNotGoToSchool = age2 < 7 || age2 > 18;
-        if (age2 >= 18 && age2 < 21) {
-            System.out.println("Ты достаточно взрослый, чтобы водить, но недостаточно, чтобы пить алкоголь");
-        }
-        if (canNotGoToSchool) {
-            System.out.println("Я думаю ты не ходишь в школу");
-        }
-        boolean skyIsClear = true;
-        if (skyIsClear) {
-            System.out.println("Небо чистое");
+            if (two >= one && two >= three) {
+                System.out.println("Наибольшее число: " + two);
+            } else {
+                System.out.println("Наибольшее число: " + three);
+            }
         }
     }
 }
